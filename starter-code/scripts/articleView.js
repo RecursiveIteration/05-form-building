@@ -78,10 +78,6 @@ articleView.initNewArticlePage = function() {
 
   // TODO: Hide the article-export section on page load
 
-  $('#article-json').on('focus', function(){
-    this.select();
-  });
-
   // TODO: Add an event handler to update the preview and the article-export field if any inputs change.
 
 };
@@ -90,11 +86,18 @@ articleView.initNewArticlePage = function() {
 articleView.create = function() {
   // TODO: Set up a var to hold the new article we are creating.
   // Clear out the #articles element, so we can put in the updated preview
-  var newArticle = new Article();
+  var newArticle;
   $('#articles').empty();
 
   // TODO: Instantiate an article based on what's in the form fields:
-
+  newArticle = new Article (
+    $('author').val(),
+    $('authorUrl').val(),
+    $('title').val(),
+    $('category').val(),
+    $('body').val()
+  );
+  console.log(newArticle);
 
   // TODO: Use our interface to the Handblebars template to put the article preview into the DOM:
 
