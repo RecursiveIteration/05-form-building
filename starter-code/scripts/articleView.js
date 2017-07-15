@@ -75,10 +75,14 @@ articleView.setTeasers = function() {
 
 articleView.initNewArticlePage = function() {
  // TODO: Make the tabs work. Right now, you're seeing all the tab content (items with a class of tab-content) on the page at once. The section with the id of "write" should show when the "write" tab is clicked; it is also the default and should be shown on page load. The section with the id of "articles" should show when the "preview" tab is clicked.
+// done, took too long to figure what was wanted
+  articleView.handleMainNav();
 
   // TODO: Hide the article-export section on page load
+  $('#article-export').hide();
 
   // TODO: Add an event handler to update the preview and the article-export field if any inputs change.
+  $('#newBlogEntry').on('change', articleView.create);
 
 };
 
@@ -86,6 +90,7 @@ articleView.initNewArticlePage = function() {
 articleView.create = function() {
   // TODO: Set up a var to hold the new article we are creating.
   // Clear out the #articles element, so we can put in the updated preview
+// done, took a bit
   var newArticle;
   $('#articles').empty();
 
