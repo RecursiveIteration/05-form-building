@@ -33,7 +33,6 @@
     <main class="clearfix">
 
       <section id="write" class="tab-content">
-        <h1>Create New Article</h1>
         <!-- TODO: Set up a form to accept user input for a new blog article. Remember that we need:
                    1. Article title
                    2. Article body
@@ -42,8 +41,12 @@
                    5. Article category
                    6. Some way to know if this article is a draft or is published -->
         <form id="newBlogEntry">
+          <button type="submit" id="create">New Article</button>
           <label>Article Title
             <input type="text" id="title" placeholder="title" />
+          </label>
+          <label>Article Content
+            <textarea rows="10" id="body" placeholder="content"></textarea>
           </label>
           <label>Author
             <input type="text" id="author" placeholder="name" />
@@ -54,10 +57,9 @@
           <label>Category
             <input type="text" id="category" placeholder="category" />
           </label>
-          <label>Article Content
-            <textarea rows="10" id="body" placeholder="content"></textarea>
+          <label>
+            <input type="checkbox" id="publishedOn" checked />Published
           </label>
-          <button type="submit" id="create">Create Article</button>
         </form>
       </section>
 
