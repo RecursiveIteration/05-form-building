@@ -53,7 +53,17 @@
 }
 
 /*TODO: Add CSS for the "article-export" portion of our new page*/
+.previewEl {
+  float: right;
+  width: 70%;
+  opacity: .5;
+  border: none;
+  border-bottom: 1px solid;
+}
 
+p.previewEl {
+  border: none;
+}
 
 @media only screen and (min-width: 640px) {
   .icon-menu {

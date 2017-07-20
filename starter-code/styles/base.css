@@ -46,3 +46,23 @@ a:visited {
 /*FORM STYLES
 =======================================*/
 /*TODO: Add the CSS needed to style the form*/
+form input, textarea {
+  width: 100%;
+  margin: 20px 0;
+  border: none;
+  font-size: 1.5em;
+}
+
+form input {
+  border-bottom: 2px solid green;
+}
+
+form textarea {
+  border: 2px solid green;
+  font-size: 1em;
+}
+
+#publishedOn {
+  width: auto;
+  clear: left;
+}
